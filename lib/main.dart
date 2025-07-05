@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:counter_app_redesign/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_app_redesign/widgets/custom_button.dart';
 
@@ -107,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: CustomNavbar(),
       appBar: AppBar(
         title: const Text("Counter App"),
         centerTitle: true,
